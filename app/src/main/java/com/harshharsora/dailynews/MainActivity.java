@@ -30,10 +30,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     LinearProgressIndicator progressIndicator;
     Button btn1,btn2,btn3,btn4,btn5,btn6,btn7;
     SearchView searchView;
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -107,7 +103,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         });
                       });
                     }
-
                     @Override
                     public void onFailure(Throwable throwable) {
                         Log.i("GOT failure",throwable.toString());
@@ -115,7 +110,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
         );
     }
-
     @Override
     public void onClick(View v) {
         Button btn =(Button) v;
